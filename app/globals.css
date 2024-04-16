@@ -55,3 +55,8 @@ input:focus {
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
