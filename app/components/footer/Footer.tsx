@@ -13,7 +13,7 @@ export default () => {
           <div className="flex flex-col">
             <h3 className="mb-[20px]">sitemap</h3>
             <a href="">Menu</a>
-            <a href="">Book now</a>
+            <a href="#booking">Book now</a>
           </div>
           <div className="flex flex-col">
             <h3 className="mb-[20px]">Adress</h3>

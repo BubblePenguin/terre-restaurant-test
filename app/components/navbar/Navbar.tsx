@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default () => {
   return (
-    <nav className="absolute bg-transparent top-0 w-ldesktop h-[125px] min-w-20 py-auto text-white">
+    <nav className="absolute bg-transparent top-0 w-ldesktop h-[125px] min-w-20 py-auto text-white text-[20px]">
       <div className="m-auto w-[1360px] mt-[24px] flex flex-col justify-between h-full">
         <div className="border-b-2 border-solid border-white border-opacity-40 flex justify-between items-center h-full">
           <div>
@@ -14,7 +14,7 @@ export default () => {
             <a href="" className="hover:underline focus:underline">
               menu
             </a>
-            <a href="" className="hover:underline focus:underline">
+            <a href="#booking" className="hover:underline focus:underline">
               book now
             </a>
             <a href="" className="hover:underline focus:underline">

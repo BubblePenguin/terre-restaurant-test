@@ -43,3 +43,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+input {
+  background: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
