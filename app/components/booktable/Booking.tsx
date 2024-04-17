@@ -5,6 +5,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { FormField, FormSubmitButton } from "./FormField";
 import Notiflix from "notiflix";
+import Image from "next/image";
 
 const schema = z.object({
   name: z.string().min(2, "Name is too short"),
@@ -52,9 +53,16 @@ const Booking = () => {
   return (
     <section
       id="booking"
-      className="w-full bg-[url(/book-bg.jpg)] py-[100px] px-[10px] tablet:px-[20px] deskto:px-[120px] h-[500px] text-white flex flex-col item-center justify-center text-center"
+      className="w-full relative py-[100px] px-[10px] tablet:px-[20px] deskto:px-[120px] h-[500px] text-white flex flex-col item-center justify-center text-center"
     >
-      <div className="m-auto w-full max-w-[600px] text-[17px] teablet:text-[20px]">
+      <Image
+        width={1600}
+        height={750}
+        src="/book-bg.jpg"
+        alt=""
+        className="absolute w-full h-full object-cover left-0 right-0 top-0 bottom-0 z-0"
+      />
+      <div className=" z-10 m-auto w-full max-w-[600px] text-[17px] teablet:text-[20px]">
         <span
           className={`${montez.className} text-[17px] tablet:text[20px] desktop:text-[22px]`}
         >
