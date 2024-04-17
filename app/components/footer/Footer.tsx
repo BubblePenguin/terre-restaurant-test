@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default () => {
+const Footer = () => {
   return (
     <footer className="w-full desktop:w-desktop ldesktop:w-ldesktop py-[80px] text-white bg-black px-[10px] tsblet:px-[20px] desktop:px-[120px]">
       <div className="m-auto flex flex-col items-center gap-[40px] desktop:gap-0 desktop:items-start desktop:flex-row justify-center desktop:justify-between w-full">
@@ -36,3 +36,5 @@ export default () => {
     </footer>
   );
 };
+
+export default Footer;

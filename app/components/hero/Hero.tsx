@@ -1,6 +1,6 @@
 import { lora } from "../fonts";
 
-export default () => {
+const Hero = () => {
   return (
     <section className="w-full bg-center bg-cover bg-[url('/restaurant-1.jpg')] h-[500px] tablet:h-[535px] desktop:h-[750px] flex flex-col justify-end pb-[50px] px-[10px] tablet:pb-[70px] tablet:px-[20px] desktop:p-[120px]  text-white">
       <h1
@@ -22,3 +22,5 @@ export default () => {
     </section>
   );
 };
+
+export default Hero;

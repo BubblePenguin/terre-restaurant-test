@@ -3,7 +3,7 @@ import { lora } from "../fonts";
 import { montez } from "../fonts";
 import HistoryImage from "./HistoryImage";
 
-export default () => {
+const History = () => {
   return (
     <section
       className="w-full pb-[690px] tablet:pb-[550px] desktop:pb-[430px] ldesktop:pb-[330px] overflow-hidden relative px-[10px] tablet:px-[20px] desktop:px-[120px] py-[100px] text-black"
@@ -65,3 +65,5 @@ export default () => {
     </section>
   );
 };
+
+export default History;

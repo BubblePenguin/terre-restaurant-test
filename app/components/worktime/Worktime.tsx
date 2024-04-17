@@ -1,7 +1,7 @@
 import Image from "next/image";
 import WorktimeItem from "./WorktimeItem";
 
-export default () => {
+const Worktime = () => {
   return (
     <section className="w-full min-h-[750px] relative overflow-hidden px-[10px] tablet:px-[20px] desktop:px-[120px] py-[90px]">
       <Image
@@ -42,3 +42,5 @@ export default () => {
     </section>
   );
 };
+
+export default Worktime;

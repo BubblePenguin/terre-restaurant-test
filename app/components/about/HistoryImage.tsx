@@ -5,7 +5,7 @@ type prop = {
   height: number;
   classes?: string;
 };
-export default (props: prop) => {
+const HistoryImage = (props: prop) => {
   const { src, width, height, classes } = props;
 
   return (
@@ -18,3 +18,5 @@ export default (props: prop) => {
     ></Image>
   );
 };
+
+export default HistoryImage;

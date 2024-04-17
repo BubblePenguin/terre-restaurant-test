@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default () => {
+const GalleryMenyItem = () => {
   return (
     <Image
       width={140}
@@ -11,3 +11,5 @@ export default () => {
     />
   );
 };
+
+export default GalleryMenyItem;

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export default () => {
+const Burger = () => {
   const [isOpen, setIsOpen] = useState(false);
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
 
@@ -92,3 +92,5 @@ export default () => {
     </>
   );
 };
+
+export default Burger;

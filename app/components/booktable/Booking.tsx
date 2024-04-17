@@ -21,7 +21,7 @@ type FormData = {
   date: string;
 };
 
-export default () => {
+const Booking = () => {
   const [form, setForm] = useState<FormData>({
     name: "",
     number: "",
@@ -101,3 +101,5 @@ export default () => {
     </section>
   );
 };
+
+export default Booking;

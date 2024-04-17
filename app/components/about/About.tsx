@@ -1,7 +1,7 @@
 import History from "./History";
 import AboutGallery from "./AboutGallery";
 
-export default () => {
+const About = () => {
   return (
     <>
       <History />
@@ -9,3 +9,5 @@ export default () => {
     </>
   );
 };
+
+export default About;

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { lora } from "../fonts";
 import GalleryMenuItem from "./GalleryMenuItem";
 
-export default () => {
+const AboutGallery = () => {
   return (
     <section
       className={`w-full h-[750px] relative text-white ${lora.className}`}
@@ -28,3 +28,5 @@ export default () => {
     </section>
   );
 };
+
+export default AboutGallery;

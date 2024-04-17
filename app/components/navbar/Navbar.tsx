@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Burger from "./Burger";
 
-export default () => {
+const NavBar = () => {
   return (
     <nav className="absolute left-0 right-0 bg-transparent w-auto desktop:w-desktop ldesktop:w-ldesktop h-32 text-white text-[20px] px-[10px] tsblet:px-[20px] desktop:px-[120px]">
       <div className="m-auto pt-3 tablet:pt-5 desktop:pt-6 flex flex-col justify-between h-full">
@@ -48,3 +48,5 @@ export default () => {
     </nav>
   );
 };
+
+export default NavBar;

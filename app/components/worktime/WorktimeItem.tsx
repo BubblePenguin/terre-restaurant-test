@@ -14,7 +14,7 @@ type worktimeType = {
   text: string;
 };
 
-const worktimeItem = (item: worktimeType) => {
+const worktimeTextItem = (item: worktimeType) => {
   return (
     <div className="flex items-center gap-[12px]">
       <Image width={50} height={50} src="/worktime/logo.svg" alt="" />
@@ -25,7 +25,7 @@ const worktimeItem = (item: worktimeType) => {
   );
 };
 
-export default (props: prop) => {
+const WorktimeItem = (props: prop) => {
   const { imgsrc, title, worktimeList, number } = props;
 
   const text = (
@@ -41,7 +41,7 @@ export default (props: prop) => {
         {title}
       </h2>
       <div className="flex flex-row  desktop:flex-col gap-[60px] desktop:gap-[30px]">
-        {worktimeList.map(worktimeItem)}
+        {worktimeList.map(worktimeTextItem)}
       </div>
     </div>
   );
@@ -66,3 +66,5 @@ export default (props: prop) => {
     </div>
   );
 };
+
+export default WorktimeItem;
