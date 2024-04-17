@@ -1,5 +1,5 @@
 "use client";
-// import { GoogleTagManager } from "@next/third-parties/google";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { montez, lora } from "../fonts";
 import { useState } from "react";
 import { z } from "zod";
@@ -40,6 +40,7 @@ const Booking = () => {
 
     try {
       const res = schema.parse(form);
+      sendGTMEvent({ event: "formSubmit", value: form });
 
       Notiflix.Notify.success("Manager wil contact you as soon as possible");
       setForm({ name: "", number: "", date: "" });
