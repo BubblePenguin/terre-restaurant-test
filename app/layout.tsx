@@ -18,7 +18,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <GoogleTagManager gtmId="GTM-T8LWJZVD" />
       <body
         className={`${arsenal.className} flex flex-col items-center justify-between`}
       >
@@ -29,6 +28,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
+        <GoogleTagManager gtmId="GTM-T8LWJZVD" />
       </body>
     </html>
   );
