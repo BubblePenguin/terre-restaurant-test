@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 
 import { arsenal } from "./components/fonts";
 import { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "terre restaurant",
@@ -17,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
+      <GoogleTagManager gtmId="GTM-T8LWJZVD" />
       <body
         className={`${arsenal.className} flex flex-col items-center justify-between`}
       >
