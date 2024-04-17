@@ -41,7 +41,7 @@ const NavBar = () => {
         <div className="flex justify-end h-full items-center gap-[20px]">
           <div className=" h-[24px] tablet:h-[30px] border-r-2 border-opacity-40 border-solid border-white"></div>
           <p className="text-sm tablet:text-base desktop:text-xl">
-            125 Water street st. john's, nl 709 383 2136t
+            125 Water street st. john&apos;s, nl 709 383 2136t
           </p>
         </div>
       </div>
