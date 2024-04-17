@@ -1,5 +1,5 @@
 "use client";
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 import { montez, lora } from "../fonts";
 import { useState } from "react";
 import { z } from "zod";
@@ -103,7 +103,6 @@ const Booking = () => {
             onChange={onChange}
           />
           <FormSubmitButton />
-          <GoogleTagManager gtmId="GTM-T8LWJZVD" />
         </form>
       </div>
     </section>
