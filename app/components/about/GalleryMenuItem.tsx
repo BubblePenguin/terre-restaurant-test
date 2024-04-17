@@ -7,7 +7,7 @@ export default () => {
       height={70}
       src="/about/res1.jpg"
       alt="restaurant"
-      className="w-[140px] h-[70px] opacity-70 border-white border-[1px] hover:w-[160px] hover:h-[90px] hover:opacity-100"
+      className="object-cover grow min-w-[70px] h-[auto]] tablet:w-[100px] tablet:h[50px] desktop:w-[140px] desktop:h-[70px] opacity-70 border-white border-[1px] hover:scale-110 hover:opacity-100"
     />
   );
 };

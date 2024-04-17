@@ -14,11 +14,13 @@ export default function RootLayout({
       <body
         className={`${arsenal.className} flex flex-col items-center justify-between`}
       >
-        <Navbar />
-        <main className={`m-auto flex min-h-screen flex-col  w-ldesktop`}>
+        <main
+          className={`relative m-auto flex min-h-screen flex-col w-full desktop:w-desktop ldesktop:w-ldesktop`}
+        >
+          <Navbar />
           {children}
+          <Footer />
         </main>
-        <Footer />
       </body>
     </html>
   );

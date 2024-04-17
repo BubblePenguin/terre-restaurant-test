@@ -52,42 +52,52 @@ export default () => {
   return (
     <section
       id="booking"
-      className="w-full bg-[url(/book-bg.jpg)] py-[100px] px-[500px] h-[500px] text-white flex flex-col item-center justify-center text-center"
+      className="w-full bg-[url(/book-bg.jpg)] py-[100px] px-[10px] tablet:px-[20px] deskto:px-[120px] h-[500px] text-white flex flex-col item-center justify-center text-center"
     >
-      <span className={`${montez.className} text-[20px]`}>book a table</span>
-      <h2 className={`${lora.className} text-[60px]`}>book a table</h2>
-      <form
-        onSubmit={onSubmit}
-        className="flex flex-col gap-[35px] justify-between"
-      >
-        <FormField
-          type="text"
-          placeholder="name"
-          name="name"
-          required={true}
-          value={form.name}
-          onChange={onChange}
-        />
-        <FormField
-          type="number"
-          placeholder="your phone number"
-          name="number"
-          required={true}
-          value={form.number}
-          onChange={onChange}
-        />
+      <div className="m-auto w-full max-w-[600px] text-[17px] teablet:text-[20px]">
+        <span
+          className={`${montez.className} text-[17px] tablet:text[20px] desktop:text-[22px]`}
+        >
+          book a table
+        </span>
+        <h2
+          className={`${lora.className} text-[40px] tablet:text-[50px] desktop:text-[60px]`}
+        >
+          book a table
+        </h2>
+        <form
+          onSubmit={onSubmit}
+          className="flex flex-col gap-[35px] justify-between"
+        >
+          <FormField
+            type="text"
+            placeholder="name"
+            name="name"
+            required={true}
+            value={form.name}
+            onChange={onChange}
+          />
+          <FormField
+            type="number"
+            placeholder="your phone number"
+            name="number"
+            required={true}
+            value={form.number}
+            onChange={onChange}
+          />
 
-        <FormField
-          type="date"
-          placeholder="date"
-          name="date"
-          required={true}
-          value={form.date}
-          onChange={onChange}
-        />
-        <FormSubmitButton />
-        <GoogleTagManager gtmId="GTM-T8LWJZVD" />
-      </form>
+          <FormField
+            type="date"
+            placeholder="date"
+            name="date"
+            required={true}
+            value={form.date}
+            onChange={onChange}
+          />
+          <FormSubmitButton />
+          <GoogleTagManager gtmId="GTM-T8LWJZVD" />
+        </form>
+      </div>
     </section>
   );
 };
