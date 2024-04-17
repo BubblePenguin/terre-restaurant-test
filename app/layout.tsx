@@ -3,6 +3,12 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 
 import { arsenal } from "./components/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "terre restaurant",
+  description: "test task for a company that sells everything",
+};
 
 export default function RootLayout({
   children,
